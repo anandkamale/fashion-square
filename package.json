@@ -10,12 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/basir/mern-amazona.git"
+    "url": "git+https://github.com/anandkamale/fashion-square.git"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/basir/mern-amazona/issues"
-  },
-  "homepage": "https://github.com/basir/mern-amazona#readme"
+  "license": "ISC"
+  
+ 
 }
