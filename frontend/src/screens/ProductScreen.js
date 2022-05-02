@@ -177,7 +177,7 @@ function ProductScreen() {
                 <ListGroup.Item>
                   <Row>
                     <Col>Price:</Col>
-                    <Col>₹{product.price}</Col>
+                    <Col>Rupees{product.price}</Col>
                   </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>
