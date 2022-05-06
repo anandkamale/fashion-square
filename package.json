@@ -13,7 +13,9 @@
     "url": "git+https://github.com/anandkamale/fashion-square.git"
   },
   "author": "",
-  "license": "ISC"
-  
- 
+  "license": "ISC",
+  "dependencies": {
+    "react-redux": "^8.0.1",
+    "react-responsive-carousel": "^3.2.23"
+  }
 }
