@@ -50,7 +50,7 @@ export default function OrderHistoryScreen() {
     fetchData();
   }, [userInfo]);
   return (
-    <div>
+    <div className='cart-screen'>
       <Helmet>
         <title>Order History</title>
       </Helmet>

@@ -55,7 +55,7 @@ userRouter.delete(
   expressAsyncHandler(async (req, res) => {
     const user = await User.findById(req.params.id);
     if (user) {
-      if (user.email === 'anand@gmail.com') {
+      if (user.email === 'admin@example.com') {
         res.status(400).send({ message: 'Can Not Delete Admin User' });
         return;
       }
@@ -109,7 +109,7 @@ userRouter.put(
   '/profile',
   isAuth,
   expressAsyncHandler(async (req, res) => {
-    const user = await User.findById(req.user._id);
+    const user = await User.findById(req.user.id);
     if (user) {
       user.name = req.body.name || user.name;
       user.email = req.body.email || user.email;
@@ -119,7 +119,7 @@ userRouter.put(
 
       const updatedUser = await user.save();
       res.send({
-        _id: updatedUser._id,
+        id: updatedUser.id,
         name: updatedUser.name,
         email: updatedUser.email,
         isAdmin: updatedUser.isAdmin,

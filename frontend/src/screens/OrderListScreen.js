@@ -88,7 +88,7 @@ export default function OrderListScreen() {
   };
 
   return (
-    <div>
+    <div className='cart-screen1'>
       <Helmet>
         <title>Orders</title>
       </Helmet>

@@ -40,17 +40,14 @@ const prices = [
     value: '1-500',
   },
   {
-    name: '₹501 to ₹1000',
-    value: '501-1000',
+    name: '₹501 to ₹5000',
+    value: '501-5000',
   },
   {
-    name: '₹1001 to ₹10000',
-    value: '1001-10000',
+    name: '₹5001 to ₹100000',
+    value: '5001-100000',
   },
-  {
-    name: '₹10001 to ₹100000',
-    value: '10001-100000',
-  },
+  
 ];
 
 export const ratings = [
@@ -132,7 +129,7 @@ export default function SearchScreen() {
     return `/search?category=${filterCategory}&query=${filterQuery}&price=${filterPrice}&rating=${filterRating}&order=${sortOrder}&page=${filterPage}`;
   };
   return (
-    <div>
+    <div className='cart-screen'>
       <Helmet>
         <title>Search Products</title>
       </Helmet>

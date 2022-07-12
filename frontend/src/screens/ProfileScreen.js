@@ -62,7 +62,8 @@ export default function ProfileScreen() {
   };
 
   return (
-    <div className="container small-container">
+    <div className='cart-screen'>
+    <div className="container small-container" >
       <Helmet>
         <title>User Profile</title>
       </Helmet>
@@ -103,6 +104,7 @@ export default function ProfileScreen() {
           <Button type="submit">Update</Button>
         </div>
       </form>
+    </div>
     </div>
   );
 }

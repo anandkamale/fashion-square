@@ -42,6 +42,7 @@ export default function SigninScreen() {
   }, [navigate, redirect, userInfo]);
 
   return (
+    <div className='cart-screen'>
     <Container className="small-container">
       <Helmet>
         <title>Sign In</title>
@@ -73,5 +74,6 @@ export default function SigninScreen() {
         </div>
       </Form>
     </Container>
+    </div>
   );
 }

@@ -7,6 +7,8 @@ import Product from '../components/Product';
 import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
+import { SliderData } from '../components/SliderData';
+import ImageSlider from '../components/ImageSlider';
 // import data from '../data';
 
 const reducer = (state, action) => {
@@ -48,7 +50,8 @@ function HomeScreen() {
       <Helmet>
         <title>Fasion Square</title>
       </Helmet>
-      <h1>Featured Products</h1>
+      <ImageSlider slides={SliderData} />
+      <h1><bold>All Products</bold></h1>
       <div className="products">
         {loading ? (
           <LoadingBox />

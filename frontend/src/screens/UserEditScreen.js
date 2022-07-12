@@ -90,6 +90,7 @@ export default function UserEditScreen() {
     }
   };
   return (
+    <div className='cart-screen'>
     <Container className="small-container">
       <Helmet>
         <title>Edit User ${userId}</title>
@@ -138,5 +139,6 @@ export default function UserEditScreen() {
         </Form>
       )}
     </Container>
+    </div>
   );
 }

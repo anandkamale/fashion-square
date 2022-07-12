@@ -58,7 +58,7 @@ export default function ShippingAddressScreen() {
   }, [ctxDispatch, fullBox]);
 
   return (
-    <div>
+    <div className='cart-screen'>
       <Helmet>
         <title>Shipping Address</title>
       </Helmet>

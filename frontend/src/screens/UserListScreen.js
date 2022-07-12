@@ -88,7 +88,7 @@ export default function UserListScreen() {
     }
   };
   return (
-    <div>
+    <div className='cart-screen'>
       <Helmet>
         <title>Users</title>
       </Helmet>

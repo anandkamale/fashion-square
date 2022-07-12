@@ -37,7 +37,7 @@ export default function CartScreen() {
   };
 
   return (
-    <div>
+    <div className='cart-screen'>
       <Helmet>
         <title>Shopping Cart</title>
       </Helmet>

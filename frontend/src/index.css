@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -124,4 +127,85 @@ main {
 }
 button.thumbnail {
   padding: 0;
+}
+.item-container {
+  width: 100%;
+  display: flex;
+  color: white;
+  background-color: #2b2727;
+  padding-left: 100px;
+}
+.item-container p {
+  
+  margin: 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+.item-container p:hover{
+  cursor: pointer;
+}
+
+
+.slider {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+@media screen and (max-width: 768px) {
+  .slider{
+    margin: 10px;
+  }
+}
+
+.brand-name{
+  color: white;
+}
+
+.cart-screen{
+  height: 100vh;
+}
+.cart-screen1{
+  height: auto;
 }
